@@ -4,14 +4,26 @@ namespace Bagpack.BagpackTypes
 {
     abstract class AbstractBagpack
     {
-        public List<string> ItemList  { protected set; get; }
+        public List<string> itemList  { protected set; get; }
 
         public AbstractBagpack()
         {
-            ItemList = new List<string>();
+            itemList = new List<string>();
         }
 
         public abstract string AddItem(string Item);
         public abstract string RemoveItem(string Item);
+
+        public override string ToString()
+        {
+            string items = "";
+
+            foreach (var item in itemList)
+            {
+                items += item.ToString() + "\n";
+            }
+
+            return items;
+        }
     }
 }

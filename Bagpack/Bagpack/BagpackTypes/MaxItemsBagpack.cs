@@ -13,9 +13,9 @@ namespace Bagpack.BagpackTypes
         }
         public override string AddItem(string Item)
         {
-            if (ItemList.Count < maxItemsNumber)
+            if (itemList.Count < maxItemsNumber)
             {
-                ItemList.Add(Item);
+                itemList.Add(Item);
                 return ("Success");
             }
             else
@@ -26,9 +26,9 @@ namespace Bagpack.BagpackTypes
 
         public override string RemoveItem(string Item)
         {
-            if (ItemList.Contains(Item))
+            if (itemList.Contains(Item))
             {
-                ItemList.Remove(Item);
+                itemList.Remove(Item);
                 return ("Success");
             }
             else

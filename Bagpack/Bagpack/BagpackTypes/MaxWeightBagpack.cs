@@ -20,7 +20,7 @@ namespace Bagpack.BagpackTypes
 
             if (Enum.TryParse<ItemWeights>(Item, out itemWeight) && (currentWeight + (int) itemWeight) <= maxWeight)
             {
-                ItemList.Add(Item);
+                itemList.Add(Item);
                 currentWeight += (int) itemWeight;
                 return ("Success");
             }
@@ -34,11 +34,11 @@ namespace Bagpack.BagpackTypes
 
         public override string RemoveItem(string Item)
         {
-            if (ItemList.Contains(Item))
+            if (itemList.Contains(Item))
             {
                 ItemWeights itemWeight;
 
-                ItemList.Remove(Item);
+                itemList.Remove(Item);
                 Enum.TryParse<ItemWeights>(Item, out itemWeight);
                 currentWeight -= (int) itemWeight;
 

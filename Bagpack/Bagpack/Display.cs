@@ -15,10 +15,7 @@ namespace Bagpack
             {
                 Console.Clear();
                 Console.WriteLine("Content of the bagpack are:");
-                foreach (string item in bagpack.ItemList)
-                {
-                    Console.WriteLine(item);
-                }
+                Console.WriteLine(bagpack.ToString());
 
                 Console.WriteLine("What would you like to do? Choose between 'add', 'remove', and 'quit'.");
                 menuOption = Console.ReadLine();

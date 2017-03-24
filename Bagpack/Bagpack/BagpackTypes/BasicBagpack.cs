@@ -6,15 +6,15 @@ namespace Bagpack.BagpackTypes
     {
         public override string AddItem(string Item)
         {
-            ItemList.Add(Item);
+            itemList.Add(Item);
             return ("Success");
         }
 
         public override string RemoveItem(string Item)
         {
-            if (ItemList.Contains(Item))
+            if (itemList.Contains(Item))
             {
-                ItemList.Remove(Item);
+                itemList.Remove(Item);
                 return ("Success");
             }
             else
