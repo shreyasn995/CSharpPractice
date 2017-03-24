@@ -33,7 +33,7 @@ namespace Bagpack.BagpackTypes
             }
             else
             {
-                return ("Item ot found in your bagpack");
+                return ("Item not found in your bagpack");
             }
         }
     }

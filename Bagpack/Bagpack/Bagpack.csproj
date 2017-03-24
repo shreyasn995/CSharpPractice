@@ -46,6 +46,7 @@
     <Compile Include="BagpackTypes\AbstractBagpack.cs" />
     <Compile Include="BagpackTypes\BasicBagpack.cs" />
     <Compile Include="BagpackTypes\MaxItemsBagpack.cs" />
+    <Compile Include="BagpackTypes\MaxWeightBagpack.cs" />
     <Compile Include="Display.cs" />
     <Compile Include="ItemWeights.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

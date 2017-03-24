@@ -59,6 +59,8 @@ namespace Bagpack
                     return new BasicBagpack();
                 case "maxitem":
                     return new MaxItemsBagpack();
+                case "maxweight":
+                    return new MaxWeightBagpack();
                 default:
                     Console.WriteLine("Incorrect input. Try again.");
                     return GetBagpackType();
